@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: smatech-auth-service
+  profiles:
+    active: dev
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  main:
+    allow-circular-references: true
+
+server:
+  port: 8005
+
+logging:
+  level:
+    org.springframework.security: debug
